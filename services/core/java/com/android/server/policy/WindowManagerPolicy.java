@@ -1794,6 +1794,13 @@ public interface WindowManagerPolicy extends WindowManagerPolicyConstants {
     boolean setAodShowing(boolean aodShowing);
 
     /**
+     * Long screenshot
+     * @hide
+     */
+    public void takeOPScreenshot(int type, int reason);
+    public void stopLongshotConnection();
+
+    /**
      * Check if gesture navigation is enable.
      *
      * @return true if enable; false otherwise.
